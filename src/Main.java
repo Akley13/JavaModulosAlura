@@ -14,5 +14,20 @@ public class Main {
 
         double mediaFilme = (9.8 + 6.3 + 8.0) / 3;
         System.out.println(mediaFilme);
+
+        // 1° método
+        String sinopse;
+        sinopse = "Filme de aventura SENSACIONAL!";
+        System.out.println(sinopse);
+
+        //2° método
+        //JAVA15
+        /*String sinopse = """
+                            Texto formatado
+                            Quebrando linha
+                           """ + anoLancamento;*/
+
+
+
     }
 }
