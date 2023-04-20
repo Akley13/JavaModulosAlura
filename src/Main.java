@@ -5,9 +5,14 @@ public class Main {
 
         int anoLancamento = 2022;
         System.out.println("Ano de lançamento: " + anoLancamento); // concatenação
-        boolean incluidoNoPlano = true;
+
         double notaDoFilme = 8.1;
         System.out.println("Nota do filme: " + notaDoFilme);
+
+        boolean incluidoNoPlano = true;
         System.out.println("Plano (True/False): " + incluidoNoPlano);
+
+        double mediaFilme = (9.8 + 6.3 + 8.0) / 3;
+        System.out.println(mediaFilme);
     }
 }
