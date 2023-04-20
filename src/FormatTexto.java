@@ -1,4 +1,4 @@
-public class FormatacaoTexto {
+public class FormatTexto {
     public static void main(String[] args) {
         String nome = "Akley"; // %s indica String
         int idade = 22;       // %d indica valor inteiro
