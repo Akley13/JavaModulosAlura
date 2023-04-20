@@ -27,7 +27,9 @@ public class Main {
                             Quebrando linha
                            """ + anoLancamento;*/
 
-
+        int classidicacao;
+        classidicacao = (int) (mediaFilme/2);
+        System.out.println(classidicacao);
 
     }
 }
