@@ -4,7 +4,6 @@ public class LoopFor {
     public static void main(String[] args) {
         Scanner inputDados = new Scanner(System.in);
 
-        String nome;
         double notaDoFilme = 0;
         double mediaAvaliacao = 0;
 
