@@ -17,14 +17,14 @@ public class JogoAdivinhacao {
             System.out.println("Número: ");
             numeroDigitado = inputData.nextInt();
 
-            if (numeroDigitado == new Random().nextInt(100)) {
+            if (numeroDigitado == new Random().nextInt(10)) {
                 System.out.println("------------------------------");
                 System.out.println("   PARABÉNS, VOCÊ GANHOU!!!   ");
                 System.out.println("------------------------------");
                 break;
             }
 
-            if (numeroDigitado < new Random().nextInt(100)){
+            if (numeroDigitado < new Random().nextInt(10)){
                 System.out.println("O número premiado é maior que este número!");
             } else {
                 System.out.println("O número premiado é menor que este número!");
