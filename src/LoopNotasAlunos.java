@@ -16,6 +16,6 @@ public class LoopNotasAlunos {
             mediaAvaliacao += notaDoFilme;
         }
 
-        System.out.println("Média da avaliação: " + mediaAvaliacao/3);
+        System.out.printf("Média da avaliação: %.2f",mediaAvaliacao/3);
     }
 }
