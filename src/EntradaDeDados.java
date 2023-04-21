@@ -1,7 +1,6 @@
-import java.util.Locale;
 import java.util.Scanner;
 
-public class LeituraDoUsuario {
+public class EntradaDeDados {
     public static void main(String[] args) {
         Scanner inputData = new Scanner(System.in);
 
