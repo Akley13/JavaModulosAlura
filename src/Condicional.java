@@ -22,6 +22,5 @@ public class Condicional {
         } else {
             System.out.println("Filme Negado!");
         }
-
     }
 }
