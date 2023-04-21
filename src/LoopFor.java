@@ -1,7 +1,6 @@
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Scanner;
 
-public class LoopNotasAlunos {
+public class LoopFor {
     public static void main(String[] args) {
         Scanner inputDados = new Scanner(System.in);
 
