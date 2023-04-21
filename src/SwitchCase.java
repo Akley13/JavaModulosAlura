@@ -25,7 +25,7 @@ public class SwitchCase {
                 break;
         }
 
-        System.out.println("O código" + sorvete + ", é referente ao sabor " + saborSorvete);
+        System.out.println("O código " + sorvete + ", é referente ao sabor " + saborSorvete + "!");
     }
 
 }
