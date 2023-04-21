@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class EntradaDeDados {
     public static void main(String[] args) {
@@ -16,6 +17,5 @@ public class EntradaDeDados {
         System.out.println("---------------------------------------------------------------");
         System.out.println("Filme favorito: " + filme + " | " + "Ano de lançamento: " + anoLancamento + " | " + "Nota: " + nota);
         System.out.println("---------------------------------------------------------------");
-
     }
 }
