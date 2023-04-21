@@ -5,9 +5,12 @@ public class JogoAdivinhacao {
     public static void main(String[] args) {
         Scanner inputData = new Scanner(System.in);
 
-        int numeroPremiado = new Random().nextInt(10);
+        int numeroPremiado = new Random().nextInt(40);
         int tentativas = 5;
         int numeroDigitado;
+
+        System.out.println("Neste jogo você tem que adivinhar o número premiado, ele está entre 0 e 40. BOA SORTE!");
+        System.out.println();
 
         for (int i = 0; i < 5; i++) {
             System.out.println("Tentativas: " + tentativas);
