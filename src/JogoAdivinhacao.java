@@ -5,6 +5,7 @@ public class JogoAdivinhacao {
     public static void main(String[] args) {
         Scanner inputData = new Scanner(System.in);
 
+        int numeroPremiado = new Random().nextInt(10);
         int tentativas = 5;
         int numeroDigitado;
 
@@ -17,14 +18,14 @@ public class JogoAdivinhacao {
             System.out.println("Número: ");
             numeroDigitado = inputData.nextInt();
 
-            if (numeroDigitado == new Random().nextInt(10)) {
+            if (numeroDigitado == numeroPremiado) {
                 System.out.println("------------------------------");
                 System.out.println("   PARABÉNS, VOCÊ GANHOU!!!   ");
                 System.out.println("------------------------------");
                 break;
             }
 
-            if (numeroDigitado < new Random().nextInt(10)){
+            if (numeroDigitado < numeroPremiado){
                 System.out.println("O número premiado é maior que este número!");
             } else {
                 System.out.println("O número premiado é menor que este número!");
@@ -36,6 +37,8 @@ public class JogoAdivinhacao {
         }
 
         if (tentativas == 0) {
+            System.out.println("NÚMERO PREMIADO: " + numeroPremiado);
+            System.out.println();
             System.out.println("SINTO MUITO, VOCÊ PERDEU!");
         }
 
