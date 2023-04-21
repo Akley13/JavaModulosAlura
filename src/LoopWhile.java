@@ -4,12 +4,18 @@ public class LoopWhile {
     public static void main(String[] args) {
         Scanner inputDados = new Scanner(System.in);
 
-        int alunos = 0;
+        double notaDofilme = 0;
+        double mediaAvaliacao = 0;
+        int contador = 1;
 
-        while (alunos != -1) {
-            System.out.println("Nome do aluno ou digite -1 para encerrar lista.");
-            Object String = null;
-            alunos = Integer.parseInt(inputDados.nextLine());
+        while (notaDofilme != -1) {
+            System.out.println("Contador: " + contador++);
+
+            System.out.println("Nota dos filmes: ");
+            notaDofilme = inputDados.nextDouble();
         }
+
+        System.out.printf("Média da avaliação: %.2f",mediaAvaliacao / contador);
+
     }
 }

@@ -6,8 +6,11 @@ public class LoopFor {
 
         double notaDoFilme = 0;
         double mediaAvaliacao = 0;
+        int contador = 1;
 
         for (int i = 0; i < 3; i++) {
+            System.out.println("Contador: " + contador++);
+
             System.out.println("Nota do filme: ");
             notaDoFilme = inputDados.nextDouble();
             //mediaDosAlunos = mediaDosAlunos + notaDosAlunos; (OUTRO MODO)
