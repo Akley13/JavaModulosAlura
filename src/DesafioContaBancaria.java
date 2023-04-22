@@ -16,9 +16,9 @@ public class DesafioContaBancaria {
 
         System.out.println();
 
-        System.out.println("Nome Completo: Akley Alves de Araujo Silva");
+        System.out.println("Nome Completo: João das Neves");
         System.out.println("Tipo de Conta: Corrente");
-        System.out.println("Saldo: R$ 70.560,00");
+        System.out.println("Saldo: R$ 1.000,00");
 
         System.out.println();
 
