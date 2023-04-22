@@ -67,13 +67,18 @@ public class DesafioContaBancaria {
                 System.out.println("Valor da transferência: ");
                 valorTransferencia = inputData.nextInt();
 
+                if (valorTransferencia > saldo) {
+                    System.out.println("Saldo insuficiente | Saldo atual: R$ " + saldo);
+                    break;
+                }
+
+                System.out.println();
+
                 saldo -= valorTransferencia;
 
                 System.out.println("Salto atualizado: R$ " + saldo);
 
-                if (valorTransferencia > saldo) {
-                    System.out.println("Saldo insuficiente");
-                }
+                System.out.println();
 
             } else if (opcao != 4){
                 System.out.println("Opção inválida!");
