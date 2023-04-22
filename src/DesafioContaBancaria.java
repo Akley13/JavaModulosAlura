@@ -62,6 +62,7 @@ public class DesafioContaBancaria {
 
                 saldo -= valorTransferencia;
 
+                System.out.println("Salto atualizado: R$ " + saldo);
             }
 
         }
