@@ -26,9 +26,6 @@ public class SwitchCase {
                 System.out.println("Infelizmente não temos esse sabor.");
                 break;
         }
-
-        System.out.println("");
-
     }
 }
 
