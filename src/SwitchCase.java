@@ -1,32 +1,34 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+import java.util.Scanner;
+
 public class SwitchCase {
     public static void main(String[] args) {
-        int sorvete = 4;
-        String saborSorvete;
+        int sorvete = 1;
 
         switch (sorvete) {
             case 1:
-                saborSorvete = "Morango";
+                System.out.println("Morango");
                 break;
 
             case 2:
-                saborSorvete = "Maracujá";
+                System.out.println("Limão");
                 break;
 
             case 3:
-                saborSorvete = "Limão";
+                System.out.println("Chocolate");
                 break;
 
             case 4:
-                saborSorvete = "Chocolate";
+                System.out.println("Maracujá");
                 break;
 
             default:
-                saborSorvete = "Infelizmente não temos esse sabor.";
+                System.out.println("Infelizmente não temos esse sabor.");
                 break;
         }
 
-        System.out.println("O código " + sorvete + ", é referente ao sabor " + saborSorvete + "!");
-    }
+        System.out.println("");
 
+    }
 }
 
