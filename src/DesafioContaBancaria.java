@@ -48,8 +48,6 @@ public class DesafioContaBancaria {
                 System.out.println("Saldo: " + saldo);
                 System.out.println();
 
-                contador++;
-
             } else if (opcao == 2) {
 
                 System.out.println("Valor a receber: ");
@@ -60,8 +58,6 @@ public class DesafioContaBancaria {
                 System.out.println("Salto atualizado: R$ " + saldo);
                 System.out.println();
 
-                contador++;
-
             } else if (opcao == 3) {
 
                 System.out.println("Valor da transferência: ");
@@ -71,8 +67,7 @@ public class DesafioContaBancaria {
 
                 System.out.println("Salto atualizado: R$ " + saldo);
 
-                contador++;
-
+                
             } else {
                 break;
             }
