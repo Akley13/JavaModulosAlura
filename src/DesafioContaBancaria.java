@@ -5,7 +5,7 @@ public class DesafioContaBancaria {
     public static void main(String[] args) {
         Scanner inputData = new Scanner(System.in);
 
-        double saldo = 70560;
+        double saldo = 1000;
         int opcao = 1;
         int valorRecebimento = 0;
         int valorTransferencia = 0;
@@ -43,9 +43,11 @@ public class DesafioContaBancaria {
             System.out.println("Opção desejada: ");
             opcao = inputData.nextInt();
 
+            System.out.println();
+
             if (opcao == 1) {
 
-                System.out.println("Saldo: " + saldo);
+                System.out.println("Saldo: R$ " + saldo);
                 System.out.println();
 
             } else if (opcao == 2) {
@@ -54,6 +56,8 @@ public class DesafioContaBancaria {
                 valorRecebimento = inputData.nextInt();
 
                 saldo += valorRecebimento;
+
+                System.out.println();
 
                 System.out.println("Salto atualizado: R$ " + saldo);
                 System.out.println();
@@ -67,7 +71,14 @@ public class DesafioContaBancaria {
 
                 System.out.println("Salto atualizado: R$ " + saldo);
 
-                
+                if (valorTransferencia > saldo) {
+                    System.out.println("Saldo insuficiente");
+                }
+
+            } else if (opcao != 4){
+                System.out.println("Opção inválida!");
+                System.out.println();
+
             } else {
                 break;
             }
