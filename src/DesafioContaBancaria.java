@@ -5,11 +5,11 @@ public class DesafioContaBancaria {
     public static void main(String[] args) {
         Scanner inputData = new Scanner(System.in);
 
-        int saldo = 70560;
-        int operacao = 4;
-        int opcao = 0;
+        double saldo = 70560;
+        int opcao = 1;
         int valorRecebimento = 0;
         int valorTransferencia = 0;
+        int contador = 0;
 
         System.out.println("**********************************************");
         System.out.println("-------------- DADOS DO CLIENTE --------------");
@@ -31,7 +31,8 @@ public class DesafioContaBancaria {
 
         System.out.println();
 
-        while (operacao != 4) {
+        while (contador != 4) {
+
             System.out.println("1- Consultar saldo");
             System.out.println("2- Recebimentos");
             System.out.println("3- Transferências");
@@ -42,28 +43,34 @@ public class DesafioContaBancaria {
             System.out.println("Opção desejada: ");
             opcao = inputData.nextInt();
 
-
-            if (opcao == 1) {
+            if (opcao != 4) {
                 System.out.println("Saldo: " + saldo);
-            }
 
-            if (opcao == 2) {
+                contador++;
+            } else if (opcao == 2) {
                 System.out.println("Valor a receber: ");
                 valorRecebimento = inputData.nextInt();
 
                 saldo += valorRecebimento;
 
                 System.out.println("Salto atualizado: R$ " + saldo);
-            }
 
-            if (opcao == 3) {
+                contador++;
+            } else if (opcao == 3) {
                 System.out.println("Valor da transferência: ");
                 valorTransferencia = inputData.nextInt();
 
                 saldo -= valorTransferencia;
 
                 System.out.println("Salto atualizado: R$ " + saldo);
+
+                contador++;
+
+            } else {
+                break;
             }
+
+            System.out.println("Fim do Programa");
 
         }
     }
