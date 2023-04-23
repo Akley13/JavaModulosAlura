@@ -5,7 +5,9 @@ public class DesafioContaBancaria {
     public static void main(String[] args) {
         Scanner inputData = new Scanner(System.in);
 
-        double saldo = 1000;
+        String nome = "João das Neves";
+        String tipoConta = "Corrente";
+        double saldo = 1000.00;
         int opcao = 1;
         int valorRecebimento = 0;
         int valorTransferencia = 0;
@@ -14,20 +16,14 @@ public class DesafioContaBancaria {
         System.out.println("**********************************************");
         System.out.println("-------------- DADOS DO CLIENTE --------------");
 
-        System.out.println();
+        System.out.println("\nNome Completo: " + nome);
+        System.out.println("Tipo de Conta: " + tipoConta);
+        System.out.println("Saldo: R$ " + saldo);
 
-        System.out.println("Nome Completo: João das Neves");
-        System.out.println("Tipo de Conta: Corrente");
-        System.out.println("Saldo: R$ 1.000,00");
-
-        System.out.println();
-
-        System.out.println("----------------- PimpoBank ------------------");
+        System.out.println("\n----------------- PimpoBank ------------------");
         System.out.println("**********************************************");
 
-        System.out.println();
-
-        System.out.println("            ----- OPERAÇÕES -----             ");
+        System.out.println("\n            ----- OPERAÇÕES -----             ");
 
         System.out.println();
 
