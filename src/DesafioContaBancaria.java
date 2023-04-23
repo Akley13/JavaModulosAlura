@@ -30,13 +30,11 @@ public class DesafioContaBancaria {
         while (contador != 4) {
 
             System.out.println("1- Consultar saldo");
-            System.out.println("2- Recebimentos");
-            System.out.println("3- Transferências");
+            System.out.println("2- Depositar");
+            System.out.println("3- Transferir");
             System.out.println("4- Sair");
 
-            System.out.println();
-
-            System.out.println("Opção desejada: ");
+            System.out.println("\nOpção desejada: ");
             opcao = inputData.nextInt();
 
             System.out.println();
@@ -48,7 +46,7 @@ public class DesafioContaBancaria {
 
             } else if (opcao == 2) {
 
-                System.out.println("Valor a receber: ");
+                System.out.println("Valor do depósito: ");
                 valorRecebimento = inputData.nextInt();
 
                 saldo += valorRecebimento;
