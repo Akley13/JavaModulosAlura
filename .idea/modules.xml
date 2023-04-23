@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/primeiroProgramaJava.iml" filepath="$PROJECT_DIR$/primeiroProgramaJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ModulosJavaAlura.iml" filepath="$PROJECT_DIR$/ModulosJavaAlura.iml" />
     </modules>
   </component>
 </project>

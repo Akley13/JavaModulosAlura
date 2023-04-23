@@ -1,4 +1,4 @@
-package SegundaModulo;
+package SegundoModulo;
 
 public class lista {
 }
