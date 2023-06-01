@@ -11,8 +11,13 @@ public class EntradaDeDados2 {
         System.out.println("E o ano de seu lançamento?");
         int anoDeLancamento = lerDados.nextInt();
 
+        System.out.println("Para finalizar, dê sua nota para este jogasso!");
+        double nota = lerDados.nextDouble();
+
         System.out.printf("Jogo favorito: %s", jogo);
         System.out.println();
         System.out.printf("Ano de lançamento: %d", anoDeLancamento);
+        System.out.println();
+        System.out.printf("Nota: %.2f", nota);
     }
 }
