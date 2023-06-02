@@ -15,7 +15,8 @@ public class jogoAdivinhacao2 {
         System.out.println("Tente acertar o número premiado, você terá apenas 5 tentativas.");
         System.out.println();
 
-        for (int i = 0; i < 5; i++) {
+        int i;
+        for (i = 0; i < 5; i++) {
             System.out.println("Contador: " + i);
             System.out.println("Número escolhido: ");
             numDigitado = inputData.nextInt();
