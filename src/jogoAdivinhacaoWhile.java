@@ -32,6 +32,7 @@ public class jogoAdivinhacaoWhile {
 
             if (tentativas == 5){
                 System.out.println("SINTO MUITO, VOCÊ PERDEU!");
+                System.out.println("NÚMERO PREMIADO: " + numPremiado);
             }
 
             contadorDeTentativas -= 1;
