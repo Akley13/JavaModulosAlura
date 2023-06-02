@@ -30,13 +30,16 @@ public class jogoAdivinhacaoWhile {
                 System.out.println("O número premiado é maior!");
             }
 
+            if (tentativas == 5){
+                System.out.println("SINTO MUITO, VOCÊ PERDEU!");
+            }
+
             contadorDeTentativas -= 1;
 
+
         }
 
-        if (tentativas == 5){
-            System.out.println("SINTO MUITO, VOCÊ PERDEU!");
-        }
+
 
     }
 }
