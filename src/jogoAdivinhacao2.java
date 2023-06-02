@@ -6,8 +6,9 @@ public class jogoAdivinhacao2 {
     public static void main(String[] args) {
         Scanner inputData = new Scanner(System.in);
 
+        int tentativas = 5;
         int numDigitado = 0;
-        int numPremiado = new Random().nextInt(10);
+        int numPremiado = new Random().nextInt(20);
 
         System.out.println("JOGO DA ADIVINHAÇÃO - DESAFIO ALURA");
         System.out.println();
@@ -15,9 +16,8 @@ public class jogoAdivinhacao2 {
         System.out.println("Tente acertar o número premiado, você terá apenas 5 tentativas.");
         System.out.println();
 
-        int i;
-        for (i = 0; i < 5; i++) {
-            System.out.println("Contador: " + i);
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Tentativas: " + tentativas);
             System.out.println("Número escolhido: ");
             numDigitado = inputData.nextInt();
             System.out.println();
@@ -32,6 +32,13 @@ public class jogoAdivinhacao2 {
                 System.out.println("O número premiado é maior!");
                 System.out.println();
             }
+
+            tentativas -= 1;
         }
+
+        if (tentativas == 0){
+            System.out.println("SINTO MUITO, VOCÊ PERDEU! | Número premiado:" + numPremiado);
+        }
+
     }
 }
