@@ -7,7 +7,7 @@ public class jogoAdivinhacaoWhile {
         Scanner entraDados = new Scanner(System.in);
 
         int tentativas = 0;
-        int numPremiado = new Random().nextInt(20);
+        int numPremiado = new Random().nextInt(10);
         int numDigitado;
         int contadorDeTentativas = 5;
 
@@ -23,14 +23,20 @@ public class jogoAdivinhacaoWhile {
                 break;
             }
 
-            if (numDigitado < numDigitado) {
-                System.out.println("O número premiado é maior!");
-            } else {
+            if (numDigitado > numPremiado){
                 System.out.println("O número premiado é menor!");
+                System.out.println();
+            } else {
+                System.out.println("O número premiado é maior!");
             }
 
             contadorDeTentativas -= 1;
 
         }
+
+        if (tentativas == 5){
+            System.out.println("SINTO MUITO, VOCÊ PERDEU!");
+        }
+
     }
 }
