@@ -35,6 +35,7 @@ public class DesafioContaBancaria2 {
 
         System.out.println("\nSELECIONE A OPÇÃO DESEJADA:");
 
+        // laço de repetição
         while (operacao != 4) {
 
             String menu = """
@@ -53,6 +54,7 @@ public class DesafioContaBancaria2 {
                 System.out.println("\nOpção Inválida!");
             }
 
+            // Condicional
             switch (operacao){
                 case 1:
                     System.out.println("\nSaldo atual R$ " + saldo);
