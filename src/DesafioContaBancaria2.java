@@ -37,22 +37,57 @@ public class DesafioContaBancaria2 {
         System.out.println("SELECIONE A OPÇÃO DESEJADA:");
 
         int operacao = 0;
+        double deposito = 0;
+        double valorTransferido = 0;
 
         while (operacao != 4) {
 
             System.out.println("1- Consultar saldo");
-            System.out.println("2- Receber valor");
-            System.out.println("3- Transferências");
+            System.out.println("2- Receber depósito");
+            System.out.println("3- Transferir valor");
             System.out.println("4- Encerrar operação");
 
             operacao = inserirDados.nextInt();
+            System.out.println();
+
+            if (operacao > 4){
+                System.out.println("Opção Inválida!");
+            }
 
             switch (operacao){
                 case 1:
                     System.out.println("Saldo: R$ " + saldo);
+                    System.out.println();
                     break;
+
                 case 2:
-                    System.out.println("");
+                    System.out.println("Valor do depósito: ");
+                    deposito = inserirDados.nextDouble();
+
+                    saldo += deposito;
+
+                    System.out.println("Saldo atual: R$ " + saldo);
+                    System.out.println();
+                    break;
+
+                case 3:
+                    System.out.println("Valor a ser transferido: ");
+                    valorTransferido = inserirDados.nextDouble();
+
+                    saldo -= valorTransferido;
+
+                    if (valorTransferido > saldo){
+                        System.out.println("Saldo insuticiente | Saldo atual: R$ " + saldo);
+                        System.out.println();
+                    }
+
+                    System.out.println("Valor transferido: R$ " + saldo);
+                    System.out.println();
+                    break;
+
+                case 4:
+                    System.out.println("OPERAÇÃO ENCERRADA.");
+                    break;
             }
         }
 
