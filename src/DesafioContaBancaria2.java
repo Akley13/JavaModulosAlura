@@ -25,6 +25,7 @@ public class DesafioContaBancaria2 {
 
         System.out.println("Saldo inicial: ");
         double saldo = inserirDados.nextInt();
+
         System.out.println();
 
         System.out.println("-------------- CLIENTE CADASTRADO -----------------");
@@ -32,7 +33,7 @@ public class DesafioContaBancaria2 {
 
         System.out.println("Nome completo: " + nome);
         System.out.println("CPF: " + cpf);
-        System.out.println("Saldo inicial: R$ " + saldo);
+        System.out.println("Saldo inicial R$ " + saldo);
 
         System.out.println();
         System.out.println("XXXXXXXXXXXXXXXXXXXX KESS BANK XXXXXXXXXXXXXXXXXXXX");
@@ -98,6 +99,9 @@ public class DesafioContaBancaria2 {
 
                 case 4:
                     System.out.println("OPERAÇÃO ENCERRADA.");
+                    System.out.println();
+                    System.out.println("XXXXXXXXXXXXXXXXXXXX KESS BANK XXXXXXXXXXXXXXXXXXXX");
+
                     break;
             }
         }
