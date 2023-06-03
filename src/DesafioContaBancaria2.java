@@ -21,7 +21,7 @@ public class DesafioContaBancaria2 {
         System.out.println("Saldo inicial: ");
         double saldo = inserirDados.nextInt();
 
-        System.out.println("-------------- CLIENTE CADASTRADO ----------------");
+        System.out.println("--------------- CLIENTE CADASTRADO -----------------");
         System.out.println();
 
         System.out.println("Nome completo: " + nome);
@@ -31,7 +31,31 @@ public class DesafioContaBancaria2 {
         System.out.println();
         System.out.println("XXXXXXXXXXXXXXXXXXXX KESS BANK XXXXXXXXXXXXXXXXXXXX");
 
-        
+        System.out.println("------------------- OPERAÇÕES ---------------------");
+        System.out.println();
+
+        System.out.println("SELECIONE A OPÇÃO DESEJADA:");
+
+        int operacao = 0;
+
+        while (operacao != 4) {
+
+            System.out.println("1- Consultar saldo");
+            System.out.println("2- Receber valor");
+            System.out.println("3- Transferências");
+            System.out.println("4- Encerrar operação");
+
+            operacao = inserirDados.nextInt();
+
+            switch (operacao){
+                case 1:
+                    System.out.println("Saldo: R$ " + saldo);
+                    break;
+                case 2:
+                    System.out.println("");
+            }
+        }
+
 
     }
 }
