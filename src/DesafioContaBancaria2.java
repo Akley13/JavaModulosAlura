@@ -46,6 +46,7 @@ public class DesafioContaBancaria2 {
             System.out.println("2- Receber depósito");
             System.out.println("3- Transferir valor");
             System.out.println("4- Encerrar operação");
+            System.out.println();
 
             operacao = inserirDados.nextInt();
             System.out.println();
@@ -74,16 +75,18 @@ public class DesafioContaBancaria2 {
                     System.out.println("Valor a ser transferido: ");
                     valorTransferido = inserirDados.nextDouble();
 
-                    saldo -= valorTransferido;
-
                     if (valorTransferido > saldo){
                         System.out.println("Saldo insuticiente | Saldo atual: R$ " + saldo);
                         System.out.println();
+                        break;
                     }
 
-                    System.out.println("Valor transferido: R$ " + saldo);
+                    saldo -= valorTransferido;
+
+                    System.out.println("Valor transferido: R$ " + valorTransferido);
+                    System.out.println("Saldo Atual: R$ " + saldo);
+
                     System.out.println();
-                    break;
 
                 case 4:
                     System.out.println("OPERAÇÃO ENCERRADA.");
