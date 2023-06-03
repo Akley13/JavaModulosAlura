@@ -25,6 +25,7 @@ public class DesafioContaBancaria2 {
 
         System.out.println("Saldo inicial: ");
         double saldo = inserirDados.nextInt();
+        System.out.println();
 
         System.out.println("-------------- CLIENTE CADASTRADO -----------------");
         System.out.println();
