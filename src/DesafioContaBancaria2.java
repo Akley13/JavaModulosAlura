@@ -5,6 +5,11 @@ public class DesafioContaBancaria2 {
     public static void main(String[] args) {
         Scanner inserirDados = new Scanner(System.in);
 
+        // Váriaveis utilizadas
+        int operacao = 0;
+        double deposito = 0;
+        double valorTransferido = 0;
+
         System.out.println();
         System.out.println("XXXXXXXXXXXXXXXXXXXX KESS BANK XXXXXXXXXXXXXXXXXXXX");
         System.out.println();
@@ -21,7 +26,7 @@ public class DesafioContaBancaria2 {
         System.out.println("Saldo inicial: ");
         double saldo = inserirDados.nextInt();
 
-        System.out.println("--------------- CLIENTE CADASTRADO -----------------");
+        System.out.println("-------------- CLIENTE CADASTRADO -----------------");
         System.out.println();
 
         System.out.println("Nome completo: " + nome);
@@ -30,15 +35,13 @@ public class DesafioContaBancaria2 {
 
         System.out.println();
         System.out.println("XXXXXXXXXXXXXXXXXXXX KESS BANK XXXXXXXXXXXXXXXXXXXX");
+        System.out.println();
 
         System.out.println("------------------- OPERAÇÕES ---------------------");
         System.out.println();
 
         System.out.println("SELECIONE A OPÇÃO DESEJADA:");
-
-        int operacao = 0;
-        double deposito = 0;
-        double valorTransferido = 0;
+        System.out.println();
 
         while (operacao != 4) {
 
@@ -50,14 +53,16 @@ public class DesafioContaBancaria2 {
 
             operacao = inserirDados.nextInt();
             System.out.println();
+            System.out.println("OPÇÃO: " + operacao);
 
             if (operacao > 4){
                 System.out.println("Opção Inválida!");
+                System.out.println();
             }
 
             switch (operacao){
                 case 1:
-                    System.out.println("Saldo: R$ " + saldo);
+                    System.out.println("Saldo atual R$ " + saldo);
                     System.out.println();
                     break;
 
@@ -67,7 +72,7 @@ public class DesafioContaBancaria2 {
 
                     saldo += deposito;
 
-                    System.out.println("Saldo atual: R$ " + saldo);
+                    System.out.println("Depósito realizado | Saldo atualizado R$ " + saldo);
                     System.out.println();
                     break;
 
@@ -84,8 +89,8 @@ public class DesafioContaBancaria2 {
 
                     saldo -= valorTransferido;
 
-                    System.out.println("Valor transferido: R$ " + valorTransferido);
-                    System.out.println("Saldo Atual: R$ " + saldo);
+                    System.out.println("Valor da transferência | R$ " + valorTransferido);
+                    System.out.println("Saldo Atualizado | R$ " + saldo);
 
                     System.out.println();
                     break;
