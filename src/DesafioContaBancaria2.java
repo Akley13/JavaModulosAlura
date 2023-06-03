@@ -37,11 +37,14 @@ public class DesafioContaBancaria2 {
 
         while (operacao != 4) {
 
-            System.out.println("\n1- Consultar saldo");
-            System.out.println("2- Receber depósito");
-            System.out.println("3- Transferir valor");
-            System.out.println("4- Encerrar operação");
-            System.out.println();
+            String menu = """
+                    \n1- Consultar saldo
+                    2- Receber depósito
+                    3- Transferir valor
+                    4- Encerrar operação
+                          """;
+
+            System.out.println(menu);
 
             operacao = inserirDados.nextInt();
             System.out.println("\nOPÇÃO: " + operacao);
