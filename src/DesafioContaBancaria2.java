@@ -101,7 +101,6 @@ public class DesafioContaBancaria2 {
                     System.out.println("OPERAÇÃO ENCERRADA.");
                     System.out.println();
                     System.out.println("XXXXXXXXXXXXXXXXXXXX KESS BANK XXXXXXXXXXXXXXXXXXXX");
-
                     break;
             }
         }
