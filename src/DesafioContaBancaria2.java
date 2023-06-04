@@ -1,14 +1,12 @@
-import javax.sound.midi.Soundbank;
 import java.util.Scanner;
-
 public class DesafioContaBancaria2 {
     public static void main(String[] args) {
         Scanner inserirDados = new Scanner(System.in);
 
-        // Váriaveis utilizadas
+        // Váriáveis utilizadas
         int operacao = 0;
-        double deposito = 0;
-        double valorTransferido = 0;
+        double valorTransferido;
+        double deposito;
 
         System.out.println("\nXXXXXXXXXXXXXXXXXXXX KESS BANK XXXXXXXXXXXXXXXXXXXX");
 
@@ -29,13 +27,11 @@ public class DesafioContaBancaria2 {
         System.out.println("CPF: " + cpf);
         System.out.println("Saldo inicial R$ " + saldo);
 
-        System.out.println("\nXXXXXXXXXXXXXXXXXXXX KESS BANK XXXXXXXXXXXXXXXXXXXX");
-
         System.out.println("\n------------------- OPERAÇÕES ---------------------");
 
         System.out.println("\nSELECIONE A OPÇÃO DESEJADA:");
 
-        // laço de repetição
+        // Laço de repetição
         while (operacao != 4) {
 
             String menu = """
@@ -47,8 +43,8 @@ public class DesafioContaBancaria2 {
 
             System.out.println(menu);
 
+            System.out.println("\nOPÇÃO: ");
             operacao = inserirDados.nextInt();
-            System.out.println("\nOPÇÃO: " + operacao);
 
             if (operacao > 4){
                 System.out.println("\nOpção Inválida!");
@@ -56,20 +52,23 @@ public class DesafioContaBancaria2 {
 
             // Condicional
             switch (operacao){
-                case 1:
-                    System.out.println("\nSaldo atual R$ " + saldo);
-                    break;
+                case 1 -> System.out.println("\nSaldo atual R$ " + saldo);
 
-                case 2:
+                case 2 -> {
                     System.out.println("\nValor do depósito: ");
                     deposito = inserirDados.nextDouble();
 
                     saldo += deposito;
 
                     System.out.println("\nDepósito realizado | Saldo atual R$ " + saldo);
-                    break;
+                }
 
-                case 3:
+                case 3 -> {
+                    System.out.println("\n---------------- DADOS DO REMETENTE -----------------");
+
+                    System.out.println("\nNOME COMPLETO | CPF | OUTRAS CHAVES PIX: ");
+                    String remetente = inserirDados.nextLine();
+
                     System.out.println("\nValor a ser transferido: ");
                     valorTransferido = inserirDados.nextDouble();
 
@@ -80,18 +79,16 @@ public class DesafioContaBancaria2 {
 
                     saldo -= valorTransferido;
 
-                    System.out.println("\nValor da transferência | R$ " + valorTransferido);
-                    System.out.println("Saldo Atualizado | R$ " + saldo);
-                    break;
 
-                case 4:
+                    System.out.printf("\nTransferência realizada para %s | Saldo atual R$ %f", remetente, saldo);
+                }
+
+                case 4 -> {
                     System.out.println("\nOPERAÇÃO ENCERRADA.");
 
                     System.out.println("\nXXXXXXXXXXXXXXXXXXXX KESS BANK XXXXXXXXXXXXXXXXXXXX");
-                    break;
+                }
             }
         }
-
-
     }
 }
