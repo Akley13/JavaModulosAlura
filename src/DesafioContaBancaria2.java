@@ -67,7 +67,7 @@ public class DesafioContaBancaria2 {
                     System.out.println("\n---------------- DADOS DO REMETENTE -----------------");
 
                     System.out.println("\nNOME COMPLETO | CPF | OUTRAS CHAVES PIX: ");
-                    String remetente = inserirDados.nextLine();
+                    String nomePessoa = inserirDados.nextLine();
 
                     System.out.println("\nValor a ser transferido: ");
                     valorTransferido = inserirDados.nextDouble();
@@ -80,7 +80,7 @@ public class DesafioContaBancaria2 {
                     saldo -= valorTransferido;
 
 
-                    System.out.printf("\nTransferência realizada para %s | Saldo atual R$ %f", remetente, saldo);
+                    System.out.printf("\nTransferência realizada para %s | Saldo atual R$ %f", nomePessoa, saldo);
                 }
 
                 case 4 -> {
