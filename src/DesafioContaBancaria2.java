@@ -80,7 +80,8 @@ public class DesafioContaBancaria2 {
 
                     saldo -= valorTransferido;
 
-                    System.out.printf("\nTransferência realizada para %s | Saldo atual R$ %f", nomePessoa, saldo);
+                    System.out.printf("\nTransferência de R$ %.2f realizada para %s | Saldo atual R$ %.2f",valorTransferido, nomePessoa, saldo);
+                    System.out.println();
                 }
 
                 case 4 -> {
