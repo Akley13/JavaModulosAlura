@@ -4,7 +4,5 @@ public class PessoaGetESet_principal {
 
         pessoa.nome = "Akley";
         System.out.println(pessoa.nome);
-
-
     }
 }
