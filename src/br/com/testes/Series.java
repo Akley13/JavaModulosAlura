@@ -37,7 +37,7 @@ public class Series extends Titulo {
         this.minutosPorEpsodio = minutosPorEpsodio;
     }
 
-
+    // SOBRESCRITA DE MÉTODO - Anotação @Override possibilita a sobrescrita de um método para funcionar de maneira diferente na classe em questão.
     @Override
     public int getDuracaoEmMinutos() {
         return numTemporadas * minutosPorEpsodio * epsodiosPorTemporada;
