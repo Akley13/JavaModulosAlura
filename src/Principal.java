@@ -1,5 +1,5 @@
-import br.com.testes.Filmes;
-import br.com.testes.Series;
+import br.com.testesScreenMatchAlura.Filmes;
+import br.com.testesScreenMatchAlura.Series;
 public class Principal {
     public static void main(String[] args) {
 

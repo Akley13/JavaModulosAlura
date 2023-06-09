@@ -1,4 +1,4 @@
-package br.com.testes;
+package br.com.testesScreenMatchAlura;
 
 public class Series extends Titulo {
     private int epsodiosPorTemporada;
