@@ -6,8 +6,8 @@ public class Principal {
         Series vinlandSaga = new Series();
         vinlandSaga.setNome("Vinland Saga");
         vinlandSaga.setNumTemporadas(3);
-        vinlandSaga.setEpsodiosPorTemporada(9);
-        vinlandSaga.setMinutosPorEpsodio(23);
+        vinlandSaga.setEpisodiosPorTemporada(9);
+        vinlandSaga.setMinutosPorEpisodio(23);
 
         vinlandSaga.exibeDadosSerie();
 
@@ -15,6 +15,7 @@ public class Principal {
 
         Filmes avatar = new Filmes();
         avatar.setNome("AVATAR");
+        avatar.set
         avatar.setDuracaoEmMinutos(180);
 
         avatar.exibeDadosFilme();
