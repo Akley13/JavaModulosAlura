@@ -15,7 +15,7 @@ public class Principal {
 
         Filmes avatar = new Filmes();
         avatar.setNome("AVATAR");
-        avatar.set
+        avatar.setDiretor("James Cameron");
         avatar.setDuracaoEmMinutos(180);
 
         avatar.exibeDadosFilme();
