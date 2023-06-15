@@ -20,11 +20,16 @@ public class Principal {
         Motos breakout117 = new Motos();
         breakout117.setNome("Breakout 117");
         breakout117.setMarca("Harley Davidson");
-        breakout117.setCategoria("");
-        breakout117.setAnoDeCriacao(2022);
-        breakout117.setVelocidadeMaxima("225 Km/h");
-        breakout117.setCombustivel("Elétrico");
-        breakout117.setQuantidadePassageiros(5);
+        breakout117.setCategoria("Cruiser");
+        breakout117.setAnoDeCriacao(2023);
+        breakout117.setVelocidadeMaxima("150 Km/h");
+        breakout117.setCombustivel("Gasolina");
+        breakout117.setQuantidadePassageiros(2);
+        breakout117.setCilindradas(1968);
+        breakout117.setQuantidadeDeRodas(2);
+
+        breakout117.exibeFichaVeiculosGerais();
+        breakout117.exibeDadosMotos();
 
     }
 }

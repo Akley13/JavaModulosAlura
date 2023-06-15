@@ -21,8 +21,8 @@ public class Motos extends VeiculosGerais {
     }
 
     public void exibeDadosMotos(){
-        System.out.println("------ INFORMAÇÕES ADICIONAIS ------");
-        System.out.println("\nQuantidade de rodas: ");
-        System.out.println("Cilindradas: ");
+        System.out.println("\n------ INFORMAÇÕES ADICIONAIS DA MOTO ------");
+        System.out.println("\nQuantidade de rodas: " + getQuantidadeDeRodas());
+        System.out.println("Cilindradas(cc): " + getCilindradas());
     }
 }

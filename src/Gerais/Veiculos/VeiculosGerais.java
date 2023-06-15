@@ -66,7 +66,7 @@ public class VeiculosGerais {
     }
 
     public void exibeFichaVeiculosGerais(){
-        System.out.println("Nome: " + getNome());
+        System.out.println("\nNome: " + getNome());
         System.out.println("Marca: " + getMarca());
         System.out.println("Categoria: " + getCategoria());
         System.out.println("Ano de criação: " + getAnoDeCriacao());
