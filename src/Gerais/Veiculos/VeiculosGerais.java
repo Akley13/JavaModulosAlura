@@ -8,6 +8,8 @@ public class VeiculosGerais {
     private String velocidadeMaxima;
     private String combustivel;
     private int quantidadePassageiros;
+    private int quantidadeDeRodas;
+
 
     public String getNome() {
         return nome;
@@ -65,6 +67,14 @@ public class VeiculosGerais {
         this.quantidadePassageiros = quantidadePassageiros;
     }
 
+    public int getQuantidadeDeRodas() {
+        return quantidadeDeRodas;
+    }
+
+    public void setQuantidadeDeRodas(int quantidadeDeRodas) {
+        this.quantidadeDeRodas = quantidadeDeRodas;
+    }
+
     public void exibeFichaVeiculosGerais(){
         System.out.println("\nNome: " + getNome());
         System.out.println("Marca: " + getMarca());
@@ -73,6 +83,7 @@ public class VeiculosGerais {
         System.out.println("Velocidade Máxima: " + getVelocidadeMaxima());
         System.out.println("Combustível: " + getCombustivel());
         System.out.println("Quantidade máxima de passageiros: " + getQuantidadePassageiros());
+        System.out.println("Quantidade de rodas: " + getQuantidadeDeRodas());
 
     }
 }

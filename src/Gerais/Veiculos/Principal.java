@@ -4,7 +4,7 @@ public class Principal {
     public static void main(String[] args) {
 
         // CARROS
-        VeiculosGerais bmwI4 = new VeiculosGerais();
+        Carros bmwI4 = new Carros();
         bmwI4.setNome("BMW i4");
         bmwI4.setMarca("BMW");
         bmwI4.setCategoria("Esportiva");
@@ -25,8 +25,10 @@ public class Principal {
         breakout117.setVelocidadeMaxima("150 Km/h");
         breakout117.setCombustivel("Gasolina");
         breakout117.setQuantidadePassageiros(2);
-        breakout117.setCilindradas(1968);
         breakout117.setQuantidadeDeRodas(2);
+        breakout117.setCilindradas(1968);
+
+
 
         breakout117.exibeFichaVeiculosGerais();
         breakout117.exibeDadosMotos();

@@ -1,4 +1,4 @@
 package Gerais.Veiculos;
 
-public class Carros {
+public class Carros extends  VeiculosGerais {
 }
