@@ -5,6 +5,7 @@ public class Principal {
 
         // CARROS
         Carros bmwI4 = new Carros();
+        System.out.println("\n******** CARROS ********");
         bmwI4.setNome("BMW i4");
         bmwI4.setMarca("BMW");
         bmwI4.setCategoria("Esportiva");
@@ -12,12 +13,15 @@ public class Principal {
         bmwI4.setVelocidadeMaxima("225 Km/h");
         bmwI4.setCombustivel("Elétrico");
         bmwI4.setQuantidadePassageiros(5);
+        bmwI4.setCavalos(544);
 
         bmwI4.exibeFichaVeiculosGerais();
+        bmwI4.exibeDadosCarros();
 
 
         // MOTOS
         Motos breakout117 = new Motos();
+        System.out.println("\n******** MOTOS ********");
         breakout117.setNome("Breakout 117");
         breakout117.setMarca("Harley Davidson");
         breakout117.setCategoria("Cruiser");
