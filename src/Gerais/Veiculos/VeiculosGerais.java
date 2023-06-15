@@ -3,7 +3,7 @@ package Gerais.Veiculos;
 public class VeiculosGerais {
     private String nome;
     private String marca;
-    private int AnoDeCriacao;
+    private int anoDeCriacao;
     private String categoria;
     private String velocidadeMaxima;
     private String combustivel;
@@ -52,11 +52,11 @@ public class VeiculosGerais {
     }
 
     public int getAnoDeCriacao() {
-        return AnoDeCriacao;
+        return anoDeCriacao;
     }
 
     public void setAnoDeCriacao(int anoDeCriacao) {
-        AnoDeCriacao = anoDeCriacao;
+        this.anoDeCriacao = anoDeCriacao;
     }
 
     public int getQuantidadePassageiros() {
