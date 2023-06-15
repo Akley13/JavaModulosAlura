@@ -84,6 +84,5 @@ public class VeiculosGerais {
         System.out.println("Combustível: " + getCombustivel());
         System.out.println("Quantidade máxima de passageiros: " + getQuantidadePassageiros());
         System.out.println("Quantidade de rodas: " + getQuantidadeDeRodas());
-
     }
 }
